@@ -36,9 +36,9 @@ Navegue até o diretório do projeto:
 - **CD FlutterPlayPause**
 
 Instale as dependências do projeto:
-- **Flutter PUB GET**
+- **flutter pub get**
 
-- **Flutter RUN**
+- **flutter run**
 
 
 ![image](https://github.com/user-attachments/assets/0fb3076c-a318-424f-b526-9e5b456b963e)
