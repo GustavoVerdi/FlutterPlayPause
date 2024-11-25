@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+// Função para salvar o progresso
+Future<void> saveProgress(double position) async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setDouble('video_position', position);
+}
+
+// Função para obter o progresso salvo
+Future<double?> getProgress() async {
+  final prefs = await SharedPreferences.getInstance();
+  return prefs.getDouble('video_position');
+}
 
 void main() {
   runApp(const VideoPlayerApp());
@@ -100,18 +113,43 @@ class VideoPlayerScreen extends StatefulWidget {
 
 class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   late VideoPlayerController _controller;
+  double _savedPosition = 5.0;
 
   @override
   void initState() {
     super.initState();
+
+    // Inicializa o controle
     _controller = VideoPlayerController.asset(widget.videoPath)
-      ..initialize().then((_) {
-        setState(() {});
+      ..initialize().then((_) async {
+        setState(() {
+          loadSavedProgress();
+        });
       });
+
+    _controller.addListener(() {
+      if (_controller.value.isPlaying) {
+        saveProgress(_controller.value.position.inSeconds.toDouble());
+      }
+    });
+  }
+
+  // Função para carrega a posição
+  Future<void> loadSavedProgress() async {
+    double? savedPosition = await getProgress();
+    if (savedPosition != null) {
+      setState(() {
+        _savedPosition = savedPosition;
+        _controller.seekTo(Duration(seconds: _savedPosition.toInt()));
+      });
+    }
   }
 
   @override
   void dispose() {
+    if (_controller.value.isPlaying) {
+      saveProgress(_controller.value.position.inSeconds.toDouble());
+    }
     _controller.dispose();
     super.dispose();
   }
