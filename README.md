@@ -38,49 +38,24 @@ Copiar código
 
 1. Clone o repositório:
 
-```bash
-git clone https://github.com/seu-usuario/video-player-app.git
+- **git clone https://github.com/seu-usuario/video-player-app.git
+
 Navegue até o diretório do projeto:
-bash
-Copiar código
-cd video-player-app
+- ** cd video-player-app
 Instale as dependências do projeto:
-bash
-Copiar código
-flutter pub get
-Execute o aplicativo:
-bash
-Copiar código
-flutter run
-Como Funciona
-Tela Inicial
+- **flutter pub get
+- ** flutter run
+![image](https://github.com/user-attachments/assets/0fb3076c-a318-424f-b526-9e5b456b963e)
+- ** flutter runSelecione o [2]: Chrome (chrome)
+
+##Tela Inicial
 Na tela inicial, o usuário verá uma lista de vídeos disponíveis. Cada vídeo é representado por um título e um subtítulo com a opção "Clique para assistir". Ao clicar em um vídeo, o app navega para a tela de reprodução.
 
-Tela de Reprodução
+##Tela de Reprodução
 Ao clicar em um vídeo, a tela de reprodução será aberta, exibindo o vídeo em um player de vídeo. O usuário pode dar play ou pause clicando no ícone de play/pause.
 
 A tela de reprodução também inclui um botão "Voltar", que permite retornar à tela inicial com a lista de vídeos.
 
-Controle de Reprodução
+##Controle de Reprodução
 Play/Pause: Um ícone centralizado na tela permite ao usuário pausar ou retomar a reprodução do vídeo.
 Voltar: O usuário pode voltar à tela inicial clicando no ícone de seta na parte superior da tela de reprodução.
-Exemplo de Tela
-Tela Inicial
-
-Tela de Reprodução
-
-Customização
-Se quiser adicionar novos vídeos ou personalizar o app, basta seguir as instruções abaixo:
-
-Adicionar mais vídeos: Coloque seus arquivos de vídeo no diretório assets e adicione os caminhos correspondentes no código.
-Trocar os ícones: Substitua os ícones de seta e play/pause pelos arquivos desejados e atualize o código com os novos caminhos.
-Dependências
-Este projeto utiliza as seguintes dependências:
-
-yaml
-Copiar código
-dependencies:
-  flutter:
-    sdk: flutter
-  video_player: ^2.5.0
-![image](https://github.com/user-attachments/assets/0fb3076c-a318-424f-b526-9e5b456b963e)
