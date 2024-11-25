@@ -30,7 +30,7 @@ A estrutura do projeto segue a convenção padrão do Flutter, com a organizaç�
 
 1. Clone o repositório:
 
-- **git clone https://github.com/seu-usuario/video-player-app.git**
+- **git clone [https://github.com/seu-usuario/video-player-app.git](https://github.com/GustavoVerdi/FlutterPlayPause.git)**
 
 Navegue até o diretório do projeto:
 - **CD FlutterPlayPause**
