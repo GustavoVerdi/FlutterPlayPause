@@ -1,5 +1,5 @@
-# FlutterPlayPause
 # Video Player App
+Desenvolvido por: @GustavoVerdi
 
 Este é um aplicativo Flutter para reprodução de vídeos. O app permite que o usuário escolha entre uma lista de vídeos e assista diretamente na tela de reprodução. Com um design simples e funcional, oferece uma experiência intuitiva com controles de reprodução, como play e pause.
 
