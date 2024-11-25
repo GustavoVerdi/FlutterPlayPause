@@ -53,6 +53,6 @@ Ao clicar em um vídeo, a tela de reprodução será aberta, exibindo o vídeo e
 
 A tela de reprodução também inclui um botão "Voltar", que permite retornar à tela inicial com a lista de vídeos.
 
-##Controle de Reprodução
+## Controle de Reprodução
 Play/Pause: Um ícone centralizado na tela permite ao usuário pausar ou retomar a reprodução do vídeo.
 Voltar: O usuário pode voltar à tela inicial clicando no ícone de seta na parte superior da tela de reprodução.
