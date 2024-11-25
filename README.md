@@ -20,17 +20,9 @@ Este é um aplicativo Flutter para reprodução de vídeos. O app permite que o 
 
 A estrutura do projeto segue a convenção padrão do Flutter, com a organização dos arquivos no diretório `lib/`, onde o código principal reside.
 
-### Diretório Principal
-
-/lib /assets video1.mp4 video2.mp4 curva-de-seta-apontando-para-a-esquerda.png a-pausa.png main.dart pubspec.yaml
-
-markdown
-Copiar código
-
 ## Como Instalar
 
 ### Requisitos
-
 - **Flutter SDK**: Certifique-se de ter o Flutter SDK instalado em seu ambiente de desenvolvimento. Se ainda não tiver o Flutter instalado, siga as instruções [aqui](https://flutter.dev/docs/get-started/install).
 - **Editor de Código**: Use um editor de código como o [Visual Studio Code](https://code.visualstudio.com/) ou [Android Studio](https://developer.android.com/studio).
 
@@ -38,15 +30,15 @@ Copiar código
 
 1. Clone o repositório:
 
-- **git clone https://github.com/seu-usuario/video-player-app.git
+- **git clone https://github.com/seu-usuario/video-player-app.git**
 
 Navegue até o diretório do projeto:
 - ** cd video-player-app**
 Instale as dependências do projeto:
 - **flutter pub get**
-- **flutter run**
+- **Flutter run**
 ![image](https://github.com/user-attachments/assets/0fb3076c-a318-424f-b526-9e5b456b963e)
-- ** flutter runSelecione o [2]: Chrome (chrome)**
+-**flutter runSelecione o [2]: Chrome (chrome)**
 
 ##Tela Inicial
 Na tela inicial, o usuário verá uma lista de vídeos disponíveis. Cada vídeo é representado por um título e um subtítulo com a opção "Clique para assistir". Ao clicar em um vídeo, o app navega para a tela de reprodução.
