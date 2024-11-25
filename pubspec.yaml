@@ -1,0 +1,25 @@
+name: flutter_application_1
+description: "A new Flutter project."
+publish_to: 'none'  # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^2.3.0
+  path_provider: ^2.0.14
+  path: ^1.8.3
+
+flutter:
+  assets:
+    - assets/video1.mp4
+    - assets/video2.mp4
+    - assets/seta.png
+    - assets/a-pausa.png
+
+# Ativando o uso de ícones do Material Design
+uses-material-design: true
