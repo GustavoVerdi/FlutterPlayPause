@@ -41,12 +41,12 @@ Copiar código
 - **git clone https://github.com/seu-usuario/video-player-app.git
 
 Navegue até o diretório do projeto:
-- ** cd video-player-app
+- ** cd video-player-app**
 Instale as dependências do projeto:
-- **flutter pub get
-- ** flutter run
+- **flutter pub get**
+- ** flutter run**
 ![image](https://github.com/user-attachments/assets/0fb3076c-a318-424f-b526-9e5b456b963e)
-- ** flutter runSelecione o [2]: Chrome (chrome)
+- ** flutter runSelecione o [2]: Chrome (chrome)**
 
 ##Tela Inicial
 Na tela inicial, o usuário verá uma lista de vídeos disponíveis. Cada vídeo é representado por um título e um subtítulo com a opção "Clique para assistir". Ao clicar em um vídeo, o app navega para a tela de reprodução.
